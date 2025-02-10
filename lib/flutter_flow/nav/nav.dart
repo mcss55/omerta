@@ -32,12 +32,12 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       navigatorKey: appNavigatorKey,
-      errorBuilder: (context, state) => const HomePageWidget(),
+      errorBuilder: (context, state) => const MainscreenpgWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
-          builder: (context, _) => const HomePageWidget(),
+          builder: (context, _) => const MainscreenpgWidget(),
         ),
         FFRoute(
           name: 'HomePage',
